@@ -1,0 +1,26 @@
+body{
+    background-image: linear-gradient(135deg, #cb84ec 10%, #56a5f0 100%);
+}
+.ff{
+    background-color:#8de7eb ;
+    background-image: linear-gradient(135deg, #96fcbd 5%, #f2fc62 100%);
+    width: 25%;
+    margin: 120px auto;
+    padding: 50px;
+    box-shadow: 10px 10px 5px rgb(82,11,77);
+    border-radius: 7px;
+}
+#btn{
+    color: whitesmoke;
+    background-image: linear-gradient(135deg, #56a5f0 10%, #cb84ec 100%);
+    padding: 10px;
+    font-size: large;
+    border-radius: 10px;
+    border-style: none;
+}
+@media screen and (max-width:700px) {
+    .ff{
+        width: 60%;
+        padding: 40px;
+    }
+}

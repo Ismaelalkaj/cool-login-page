@@ -1,0 +1,139 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(135deg, #0b87c0 10%, #44ecf1 100%);
+    display: flex;
+    align-items: center;
+}
+
+body::before,
+body::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body::before {
+    clip-path: circle(30% at left 20%);
+    background-image: linear-gradient(135deg, #44ecf1 10%, #0b87c0 100%);
+}
+
+body::after {
+    clip-path: circle(25% at right 80%);
+    background-image: linear-gradient(135deg, #44ecf1 10%, #0b87c0 100%);
+    opacity: 0.4;
+}
+
+header {
+    height: 100vh;
+    width: 75%;
+    background: rgba(255, 255, 255, 0.1);
+    margin: auto;
+    backdrop-filter: blur(2px);
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.co {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    
+}
+
+.hline {
+    margin-top: 300px;
+    height: 60%;
+    width: 40%;
+    background-image: linear-gradient(15deg, #565d9b 0%, #9e89fc 100%);
+    margin-bottom: 300px;
+    border-radius: 20px;
+box-shadow: 10px 10px 5px rgb(82,11,77);
+}
+
+.tal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 210px;
+}
+
+.butt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.vv button {
+    width: 100px;
+    height: 40px;
+    border-radius: .25em;
+    border-style: solid;
+    font-size: 15px;
+    
+    color: rgb(15, 255, 235);
+    transition: .2s;
+    display: inline-block;
+    border: 3px;
+    padding: .5em 1em;
+    position: relative;
+    isolation: isolate;
+
+
+}
+
+.vv button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background-color: whitesmoke;
+    inset: 0;
+    scale: .5 1;
+    transition: scale 400ms;
+    transform-origin: right;
+}
+
+.vv button:hover::after,
+.vv button:focus-visible::after {
+    scale: 0 1;
+    transform-origin: left;
+}
+
+
+.vv button:hover {
+    background-color: rgb(52, 214, 255);
+    color: rgb(142, 86, 194);
+    box-shadow: 0px 4px 3px 1px rgb(136, 181, 233);
+}
+
+span {
+    display: inline-block;
+    color: rgb(74, 74, 122);
+    font-family: var(--title-font-family);
+    font-size: var(--menu-font-size);
+    font-weight: var(--font-weight-medium);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media screen and (max-width:700px) {
+    .hline{
+        width: 90%;
+        padding: 10px;
+    }
+}
